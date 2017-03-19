@@ -1479,10 +1479,13 @@ public class PhotoModule
                 mApplicationContext.getResources().getBoolean(R.bool.back_camera_restart_preview_onPictureTaken);
             boolean frontCameraRestartPreviewOnPictureTaken =
                 mApplicationContext.getResources().getBoolean(R.bool.front_camera_restart_preview_onPictureTaken);
+            boolean additionalCameraRestartPreviewOnPictureTaken =
+                mApplicationContext.getResources().getBoolean(R.bool.additional_camera_restart_preview_onPictureTaken);
 
             CameraInfo info = CameraHolder.instance().getCameraInfo()[mCameraId];
             if ((info.facing == CameraInfo.CAMERA_FACING_BACK && backCameraRestartPreviewOnPictureTaken)
-                || (info.facing == CameraInfo.CAMERA_FACING_FRONT && frontCameraRestartPreviewOnPictureTaken)) {
+                || (info.facing == CameraInfo.CAMERA_FACING_FRONT && frontCameraRestartPreviewOnPictureTaken)
+                || (info.facing > CameraInfo.CAMERA_FACING_FRONT && additionalCameraRestartPreviewOnPictureTaken)) {
                 needRestartPreview = true;
             }
 

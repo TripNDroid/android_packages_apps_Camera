@@ -171,6 +171,8 @@
     <string-array name="pref_camera_picturesize_entries" translatable="false">
         <item>@string/pref_camera_picturesize_entry_24mp</item>
         <item>@string/pref_camera_picturesize_entry_21mp</item>
+        <item>@string/pref_camera_picturesize_entry_20mp</item>
+        <item>@string/pref_camera_picturesize_entry_20mp_wide</item>
         <item>@string/pref_camera_picturesize_entry_16mp</item>
         <item>@string/pref_camera_picturesize_entry_16mp_wide</item>
         <item>@string/pref_camera_picturesize_entry_13mp</item>
@@ -206,6 +208,8 @@
     <string-array name="pref_camera_picturesize_entryvalues" translatable="false">
         <item>5656x4242</item>
         <item>5344x4008</item>
+        <item>5376x3752</item>
+        <item>5376x3024</item>
         <item>4608x3456</item>
         <item>5312x2988</item>
         <item>4160x3120</item>
@@ -240,6 +244,8 @@
     <string-array name="pref_camera_video_snapsize_entries" translatable="false">
         <item>Auto</item>
         <item>@string/pref_camera_picturesize_entry_21mp</item>
+        <item>@string/pref_camera_picturesize_entry_20mp</item>
+        <item>@string/pref_camera_picturesize_entry_20mp_wide</item>
         <item>@string/pref_camera_picturesize_entry_16mp</item>
         <item>@string/pref_camera_picturesize_entry_16mp_wide</item>
         <item>@string/pref_camera_picturesize_entry_13mp</item>
@@ -275,6 +281,8 @@
     <string-array name="pref_camera_video_snapsize_entryvalues" translatable="false">
         <item>auto</item>
         <item>5344x4008</item>
+        <item>5376x3752</item>
+        <item>5376x3024</item>
         <item>4608x3456</item>
         <item>5312x2988</item>
         <item>4160x3120</item>

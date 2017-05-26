@@ -1081,7 +1081,7 @@ public class CaptureModule implements CameraModule, PhotoController,
                             }
                             new AlertDialog.Builder(mActivity)
                                     .setTitle("Camera Initialization Failed")
-                                    .setMessage("Closing SnapdragonCamera")
+                                    .setMessage("Closing Camera")
                                     .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                                         public void onClick(DialogInterface dialog, int which) {
                                             closeCamera();

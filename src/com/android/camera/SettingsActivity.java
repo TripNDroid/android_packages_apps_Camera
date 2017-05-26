@@ -59,9 +59,8 @@ import java.util.Arrays;
 public class SettingsActivity extends PreferenceActivity {
     private SettingsManager mSettingsManager;
     private SharedPreferences mSharedPreferences;
-    private boolean mDeveloperMenuEnabled;
+    private boolean mDeveloperMenuEnabled = true;
     private int privateCounter = 0;
-    private final int DEVELOPER_MENU_TOUCH_COUNT = 10;
 
     private SharedPreferences.OnSharedPreferenceChangeListener mSharedPreferenceChangeListener
             = new SharedPreferences.OnSharedPreferenceChangeListener() {
@@ -131,7 +130,6 @@ public class SettingsActivity extends PreferenceActivity {
         addPreferencesFromResource(R.xml.setting_menu_preferences);
 
         mSharedPreferences = getPreferenceManager().getSharedPreferences();
-        mDeveloperMenuEnabled = mSharedPreferences.getBoolean(SettingsManager.KEY_DEVELOPER_MENU, false);
 
         filterPreferences();
         initializePreferences();
@@ -146,20 +144,6 @@ public class SettingsActivity extends PreferenceActivity {
 
                     @Override
                     public boolean onPreferenceClick(Preference preference) {
-                        if (!mDeveloperMenuEnabled) {
-                            if (preference.getKey().equals("version_info")) {
-                                privateCounter++;
-                                if (privateCounter >= DEVELOPER_MENU_TOUCH_COUNT) {
-                                    mDeveloperMenuEnabled = true;
-                                    mSharedPreferences.edit().putBoolean(SettingsManager.KEY_DEVELOPER_MENU, true).apply();
-                                    Toast.makeText(SettingsActivity.this, "Camera developer option is enabled now", Toast.LENGTH_SHORT).show();
-                                    recreate();
-                                }
-                            } else {
-                                privateCounter = 0;
-                            }
-                        }
-
                         if ( preference.getKey().equals(SettingsManager.KEY_RESTORE_DEFAULT) ) {
                             onRestoreDefaultSettingsClick();
                         }

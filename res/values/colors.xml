@@ -70,9 +70,14 @@
     <color name="face_detect_fail">#80d05060</color>
     <color name="gray">#FFAAAAAA</color>
 
-    <color name="setting_color">#ff10aadc</color>
+    <!-- <color name="setting_color">#ff10aadc</color>
     <color name="setting_color_light">#ffade9fd</color>
-    <color name="list_divider_color">#d8ababab</color>
+    <color name="list_divider_color">#d8ababab</color> -->
+
+    <color name="setting_list_selected">#4010aadc</color>
+    <color name="setting_list_pressed">#6010aadc</color>
+    <color name="list_divider_color">#e0ababab</color>
+    <color name="scene_item_selected">@color/setting_list_selected</color>
 
     <color name="camera_control_bg_opaque">#ff191919</color>
     <color name="camera_control_bg_transparent">#4d191919</color>

@@ -1105,8 +1105,10 @@ public class CameraControls extends RotatableLayout {
         };
         for (View v : views) {
             if (v != null) {
-                ((RotateImageView) v).setOrientation(orientation,
-                                                     animation);
+                if (v instanceof RotateImageView) {
+                    ((RotateImageView) v).setOrientation(orientation,
+                                                         animation);
+                }
             }
         }
         layoutRemaingPhotos();

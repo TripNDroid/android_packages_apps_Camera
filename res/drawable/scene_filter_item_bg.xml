@@ -26,39 +26,9 @@
      OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
      IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
-<com.android.camera.ui.ListMenuItem xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/setting_list_item_bg"
-    android:padding="5dip" >
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ImageView
-        android:id="@+id/list_image"
-        android:layout_width="@dimen/setting_item_icon_width"
-        android:layout_height="@dimen/setting_item_icon_width"
-        android:layout_alignParentStart="true"
-        android:layout_marginEnd="15dp"
-        android:layout_centerVertical="true"
-        android:gravity="center" />
+    <item android:drawable="@color/scene_item_selected" android:state_activated="true"/>
+    <item android:drawable="@android:color/transparent"/>
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/list_image"
-        android:textColor="@android:color/white"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/current_setting"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/title"
-        android:layout_marginTop="1dip"
-        android:layout_toEndOf="@+id/list_image"
-        android:text="@string/crop_save"
-        android:textColor="#33b5e5"
-        android:textSize="10dip"
-        android:textStyle="bold" />
-
-</com.android.camera.ui.ListMenuItem>
+</selector>

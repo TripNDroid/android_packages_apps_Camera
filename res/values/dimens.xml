@@ -20,9 +20,9 @@
     <dimen name="pano_review_button_height">45dp</dimen>
     <dimen name="setting_popup_right_margin">5dp</dimen>
     <dimen name="setting_row_height">50dp</dimen>
-    <dimen name="setting_item_text_size">18sp</dimen>
+    <dimen name="setting_item_text_size">16sp</dimen>
     <dimen name="setting_knob_width">20dp</dimen>
-    <dimen name="setting_knob_text_size">20dp</dimen>
+    <dimen name="setting_knob_text_size">18dp</dimen>
     <dimen name="setting_item_text_width">95dp</dimen>
     <dimen name="setting_popup_window_width">240dp</dimen>
     <dimen name="setting_item_list_margin">2dp</dimen>
@@ -30,8 +30,8 @@
     <dimen name="popup_title_text_size">22dp</dimen>
     <dimen name="popup_title_frame_min_height">49dp</dimen>
     <dimen name="big_setting_popup_window_width">320dp</dimen>
-    <dimen name="setting_item_icon_width">28dp</dimen>
-    <dimen name="effect_setting_item_icon_width">40dp</dimen>
+    <dimen name="setting_item_icon_width">26dp</dimen>
+    <dimen name="effect_setting_item_icon_width">38dp</dimen>
     <dimen name="effect_setting_item_text_size">12sp</dimen>
     <dimen name="effect_setting_type_text_size">12sp</dimen>
     <dimen name="effect_setting_type_text_min_height">36dp</dimen>
@@ -49,7 +49,7 @@
     <dimen name="setting_row_height_large">54dp</dimen>
     <dimen name="setting_popup_window_width_large">260dp</dimen>
     <dimen name="indicator_bar_width_large">72dp</dimen>
-    <dimen name="setting_item_icon_width_large">48dp</dimen>
+    <dimen name="setting_item_icon_width_large">46dp</dimen>
     <dimen name="onscreen_indicators_height_large">36dp</dimen>
     <dimen name="pano_mosaic_surface_height_xlarge">480dp</dimen>
     <dimen name="pano_review_button_width_xlarge">180dp</dimen>
@@ -64,8 +64,8 @@
     <dimen name="popup_title_text_size_xlarge">22dp</dimen>
     <dimen name="popup_title_frame_min_height_xlarge">60dp</dimen>
     <dimen name="big_setting_popup_window_width_xlarge">590dp</dimen>
-    <dimen name="setting_item_icon_width_xlarge">35dp</dimen>
-    <dimen name="effect_setting_item_icon_width_xlarge">54dp</dimen>
+    <dimen name="setting_item_icon_width_xlarge">33dp</dimen>
+    <dimen name="effect_setting_item_icon_width_xlarge">52dp</dimen>
     <dimen name="effect_setting_item_text_size_xlarge">21dp</dimen>
     <dimen name="effect_setting_type_text_size_xlarge">21dp</dimen>
     <dimen name="effect_setting_type_text_min_height_xlarge">34dp</dimen>
@@ -132,7 +132,7 @@
     <dimen name="albumset_count_font_size">9sp</dimen>
     <dimen name="albumset_left_margin">2dp</dimen>
     <dimen name="albumset_title_right_margin">20dp</dimen>
-    <dimen name="albumset_icon_size">25dp</dimen>
+    <dimen name="albumset_icon_size">23dp</dimen>
 
     <!-- configuration for album page -->
     <integer name="album_rows_land">2</integer>

@@ -135,7 +135,7 @@ public class SettingsActivity extends PreferenceActivity {
         addPreferencesFromResource(R.xml.setting_menu_preferences);
 
         mSharedPreferences = getPreferenceManager().getSharedPreferences();
-        mDeveloperMenuEnabled = mSharedPreferences.getBoolean(SettingsManager.KEY_DEVELOPER_MENU, false);
+        mDeveloperMenuEnabled = true;
 
         filterPreferences();
         initializePreferences();

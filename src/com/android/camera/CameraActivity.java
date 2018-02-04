@@ -189,7 +189,7 @@ public class CameraActivity extends Activity
 
     // Pie Setting Menu enabled
     private static boolean PIE_MENU_ENABLED = false;
-    private boolean mDeveloperMenuEnabled = false;
+    private boolean mDeveloperMenuEnabled = true;
 
     /** This data adapter is used by FilmStripView. */
     private LocalDataAdapter mDataAdapter;
@@ -382,7 +382,7 @@ public class CameraActivity extends Activity
     }
 
     public boolean isDeveloperMenuEnabled() {
-        return mDeveloperMenuEnabled;
+        return true;
     }
 
     public void enableDeveloperMenu() {
@@ -1631,7 +1631,7 @@ public class CameraActivity extends Activity
                 mLocalVideosObserver);
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        mDeveloperMenuEnabled = prefs.getBoolean(CameraSettings.KEY_DEVELOPER_MENU, false);
+        mDeveloperMenuEnabled = true;
 
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
